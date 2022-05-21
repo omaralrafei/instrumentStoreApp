@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Instruments Store</string>
+    <string name="action_share">Share</string>
+    <string name="action_Cart">Cart</string>
+    <string name="action_home">Home</string>
+    <string name="drawer_guitar">Guitars</string>
+    <string name="drawer_bass">Bass Guitars</string>
+    <string name="drawer_accessories">Accessories</string>
+    <string-array name="spinner_choice">
+        <item>Name</item>
+        <item>Price</item>
+        <item>Best Sales</item>
+    </string-array>
+    <string name="spinner_statement">Sort By: </string>
+    <string name="button_confirm">Confirm</string>
+    <string name="addToCart_button">Add To Cart</string>
+    <string name="order_button">Order</string>
+    <string name="delete_button">Delete</string>
+    <string name="drawer_all">All</string>
+    <string name="cart_purchase">Purchase</string>
+</resources>

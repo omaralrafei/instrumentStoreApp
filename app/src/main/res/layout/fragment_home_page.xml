@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomePageFragment">
+
+    <ImageView
+        android:id="@+id/home_imageview"
+        android:layout_marginTop="10dp"
+        android:layout_width="408dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/guitarshop" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/home_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/drawer_guitar"
+            android:textSize="30sp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/instruments_imageview"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:id="@+id/instruments_description"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instruments_imageview"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/instruments_imageview1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/instruments_imageview" />
+            <TextView
+                android:id="@+id/instruments_description1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instruments_imageview1"
+                android:layout_toEndOf="@+id/instruments_description"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/instruments_imageview2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/instruments_imageview1" />
+            <TextView
+                android:id="@+id/instruments_description2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instruments_imageview2"
+                android:layout_toEndOf="@+id/instruments_description1"
+                android:textSize="15sp"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/home_cardview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/drawer_bass"
+            android:textSize="30sp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/instruments_imageview_set1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:id="@+id/instruments_description_set1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instruments_imageview_set1"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/instruments_imageview1_set1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/instruments_imageview_set1" />
+            <TextView
+                android:id="@+id/instruments_description1_set1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instruments_imageview1_set1"
+                android:layout_toEndOf="@+id/instruments_description_set1"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/instruments_imageview2_set1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/instruments_imageview1_set1" />
+            <TextView
+                android:id="@+id/instruments_description2_set1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instruments_imageview2_set1"
+                android:layout_toEndOf="@+id/instruments_description1_set1"
+                android:textSize="15sp"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
